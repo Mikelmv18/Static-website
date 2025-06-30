@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  
+  <div class="main-div" style="position: relative; left: 37rem; top: 1rem;
+      background-color: rgba(24, 24, 24, 0.514);width: 650px;">
+    
+    <div class="car-detail">
+      <img src="/assets/detailingshop-logo.svg"/>
+    </div>
+    <div>
+     <nav class="navbar" style="position: relative; top: -8px;">
+      <ul style="list-style-type: none;display: flex; gap: 20px;">
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="#"><span>CONTACT US</span></a></li>
+      </ul>
+     </nav>
+    </div>
+ 
+    <div class="icon-group">
+        <form class="search-form">
+          <input type="text" class="search-input" placeholder="Search..." name="search">
+          <button type="button" class="search-btn" onclick="toggleSearch()">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      
+        <i class="fa fa-shopping-cart"></i>
+        <i class="fas fa-user-alt"></i>
+      </div>
+  </div>
+ </div>
+
+ <section class="contact-page">
+    <div class="contact-header">
+     <h1>Contact Us</h1>
+     <img src="https://img.freepik.com/premium-vector/phone-call-icon-isolated-white-background-telephone-symbol-vector-illustration_548264-469.jpg"/>
+    </div>
+     <div class="contact-form">
+      </br></br>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2ba4d4ea-3a1e-4c21-a6f0-96cc0d6201ed">
+            <input type="text" name="name" placeholder="Name"/>
+            <input type="email" name="email" placeholder="Your e-mail" style="width: 200px;"/>
+            <textarea placeholder="Message" name="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+     </div>
+
+    </section>
+
+    <script>
+      function toggleSearch() {
+        const form = document.querySelector('.search-form');
+        form.classList.toggle('active');
+      }
+    </script>
+
+  
+
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    position: relative;
+    top: 15rem;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  td {
+    background-color: #fff;
+  }
+
+  .home-link {
+    position: relative;
+    top: 17rem;
+    right: -4px;
+    text-decoration: none;
+    color: black;
+    background-color:#dedede;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+  }
+
+  .home-link:hover {
+    opacity: 0.83;
+  }

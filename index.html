@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+ <div class="home-section">
+  <div class="header-div">
+  <div class="main-div">
+    
+    <div class="car-detail">
+      <img src="assets/detailingshop-logo.svg"/>
+    </div>
+    <div>
+     <nav class="navbar">
+      <ul style="list-style-type: none;display: flex; gap: 20px;">
+        <li class="dropdown">
+        <a style="color: white;">PRODUCTS <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-content">
+            <a href="#">Washing and Drying</a>
+            <a href="#">Rim Cleaning</a>
+            <a href="#">Ceramic Coatings</a>
+            <a href="#">Leather Upholstery</a>
+          </div>
+        </li>
+        <li><a href="#"><span>ABOUT</span></a></li>
+        <li><a href="#"><span>OUR SERVICES</span></a></li>
+        <li><a href="#"><span>BLOG</span></a></li>
+        <li><a href="contact-template/contact.html"><span>CONTACT US</span></a></li>
+      </ul>
+     </nav>
+    </div>
+ 
+    <div class="icon-group">
+      <form class="search-form">
+        
+        <img src="https://static.vecteezy.com/system/resources/previews/014/767/647/non_2x/magnifying-glass-or-search-icon-on-white-background-illustration-eps-10-vector.jpg"
+        class="loop-img"/>
+        <input type="text" class="search-input" placeholder="Enter your search" name="search">
+        <span class="remove-search" style="color: rgba(48, 48, 48, 0.514);" onclick="removeSearchBar()">X</span>
+       
+        <button type="button" class="search-btn" onclick="toggleSearch()">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fas fa-user-alt"></i>
+    </div>
+  </div>
+ </div>
+
+<section class="images">
+    <div class="container-img">
+      <img src="assets/pexels-dante-juhasz-62201650-13718679.jpg" class="leather-img" />
+      <div class="img-content">
+       <h1 class="image-text">Car Leather Care</h1>
+       <p class="image-pharagraph">Sociosqu justo habitant augue leo efficitur viverra euismod at nascetur</p>
+       <a>SHOW PRODUCTS</a>
+      </div>
+    </div>
+    <div class="second-imgs">
+      
+        <div class="nested-second">
+          <div class="inline-div">
+            <img src="assets/detailingshop-home-pic1.svg"/>
+            <h3 style="color: white;">Free delivery on this week!</h3>
+          </div>
+          <div class="time">
+            <div>
+              <span id="days">00</span>
+              <p>days</p>
+            </div>
+            <div>
+              <span id="hours">00</span>
+              <p>hours</p>
+            </div>
+            <div>
+              <span id="minutes">00</span>
+              <p>minutes</p>
+            </div>
+            <div>
+              <span id="seconds">00</span>
+              <p>seconds</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nested-third">
+          <div class="product-card">
+            <div class="product-info">
+              <h2>Cleaning Cockpit</h2>
+              <p>Bear Shoes</p>
+              <button class="buy-button">BUY NOW <i class="fa fa-arrow-right"></i></button>
+            </div>
+            <div class="product-image-wrapper">
+              <img src="assets/detailingshop-home-pic2.webp" alt="Product" class="product-image" />
+              <div class="sale-badge">
+                <p style="position:absolute; top:20px;">SALE</p>
+                <span style="position:absolute; top:42px;">33%</span>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      
+    </div>
+</section>
+
+<section class="services">
+  <div>
+    <img src="assets/detailingshop-home-icon1.svg"/>
+    <div class="services-content">
+  
+     <span>Free Delivery</span>
+     <p>Vitae sapien molestie sed</p>
+    </div>
+
+  </div>
+  <div>
+    <img src="assets/detailingshop-home-icon2.svg"/>
+    <div class="services-content">
+      <span>Free Delivery</span>
+      <p>Vitae sapien molestie sed</p>
+     </div>
+  </div>
+  <div>
+    <img src="assets/detailingshop-home-icon3.svg"/>
+    <div class="services-content">
+      <span>Free Delivery</span>
+      <p>Vitae sapien molestie sed</p>
+     </div>
+  </div>
+  <div>
+    <img src="assets/detailingshop-home-icon4.svg"/>
+    <div class="services-content">
+      <span>Free Delivery</span>
+      <p>Vitae sapien molestie sed</p>
+     </div>
+  </div>
+</section>
+
+<section class="more-services">
+ <div>
+  <img src="assets/detailingshop-home-icon5.svg"/>
+  <h5>Washing and drying</h5>
+  <span>Consequat lectus mauris</span>
+ </div>
+ <div>
+  <img src="assets/detailingshop-home-icon6.svg"/>
+  <h5>Washing and drying</h5>
+  <span>Consequat lectus mauris</span>
+ </div>
+ <div>
+  <img src="assets/detailingshop-home-icon8.svg"/>
+  <h5>Washing and drying</h5>
+  <span>Consequat lectus mauris</span>
+ </div>
+ <div>
+  <img src="assets/detailingshop-home-icon7.svg"/>
+  <h5>Washing and drying</h5>
+  <span>Consequat lectus mauris</span>
+ </div>
+</section>
+
+<hr style="position: relative; top: 150px;">
+
+<section class="products">
+  
+  <div class="products-title">
+    <h2 style="font-size: 50px;">Recommended</h2>
+    </br>
+    <span style="color: #C5C1BD;position: relative; top: -30px;font-size:50px;">Products</span>
+  </div>
+
+  <div class="products-card">
+    <div class="product-card-item">
+      <img src="assets/products/detailingshop-shop-pic6.webp" />
+      <h5>Cleaning Cockpit</h5>
+      <span>96,00 zl - 160,00 zl</span>
+    </div>
+    <div class="product-card-item">
+      <img src="assets/products/detailingshop-shop-pic9.webp" />
+      <h5>Car Wax</h5>
+      <span>96,00 zl - 160,00 zl</span>
+    </div>
+    <div class="product-card-item">
+      <img src="assets/products/detailingshop-shop-pic1-768x694.webp" />
+      <h5>Wheel cleaner</h5>
+      <span>96,00 zl - 160,00 zl</span>
+    </div>
+    <div class="product-card-item">
+      <img src="assets/products/detailingshop-shop-pic10-768x694.webp" />
+      <h5>Polish Paste</h5>
+      <span>96,00 zl - 160,00 zl</span>
+    </div>
+    <div class="product-card-item">
+      <img src="assets/products/detailingshop-shop-pic7-768x694.webp" />
+      <h5>Upholstery cleaner</h5>
+      <span>96,00 zl - 160,00 zl</span>
+    </div>
+    <div class="product-card-item">
+      <img src="assets/products/detailingshop-shop-pic4.webp" />
+      <h5>Cleaning Mats</h5>
+      <span>96,00 zl - 160,00 zl</span>
+    </div>
+  </div>
+  
+  <div class="product-btn">
+    <a href="table/table.html"><span>ALL PRODUCTS</span></a>
+  </div>
+  
+  
+
+</section>
+
+<section class="background-repeat">
+  <div class="fixed-content">
+    <img src="assets/fixed-images/detailingshop-home-pic5.svg"/>
+    </br></br></br>
+    <div class="fixed-text">
+      Class auctor vestibulum turpis suspendisse diam senectus taciti dignissim. 
+      Vitae montes lobortis dis urna faucibus commodo tempus tincidunt quisque nunc. 
+      Finibus felis consectetur justo pede mauris ornare. 
+      Himenaeos ac convallis litora.
+    </div>
+    <div class="john-text">
+      John Witchinsky
+    </div>
+    <a class="fixed-link">FIND YOUR SHOP</a>
+  </div>
+  <div class="fixed-img">
+    <img src="assets/fixed-images/detailingshop-home-pic3.webp"/>
+  </div>
+ 
+</section>
+
+<section class="new-service">
+ <div class="header">
+   <h2 style="font-size: 80px; margin-right: 50px;">
+     <span style="color: #C5C1BD; font-size: 80px;">What's</span>
+      new
+   </h2>
+ </div>
+  <div class="new-imgs">
+    <div class="blog-item">
+      <img src="assets/new-imgs/detailingshop-blog-post1-1200x645.webp" />
+      <div class="content">
+        <div class="january-content">January 8, 2025</div>
+        <h3>What product for the perfect lamps?</h3>
+        <p>Adding the perfect finishing touch to your car's lighting often involves 
+          these key details: Pick high-quality bulbs, choose a color temperature, 
+          and protective covers.</p>
+      </div>
+    </div>
+  
+    <div class="blog-item">
+      <img src="assets/new-imgs/detailingshop-blog-post2-1200x645.webp" />
+      <div class="content">
+        <div class="january-content">January 8, 2025</div>
+        <h3>How to take care of car paint all year round?</h3>
+        <p>Maintaining your car's paint year-round involves a few key steps: 
+          Regular Washing, Proper Drying, Waxing, Quick Detailing</p>
+      </div>
+    </div>
+  </div>
+  
+
+</section>
+
+<section class="buble">
+  <img src="assets/buble-img/shiny-3d-white-sphere-of-balls-background-silver-texture-gradient-collection-shiny-and-metal-steel-gradient-template-for-chrome-border-silver-frame-ribbon-or-label-design-vector.jpg"/>
+  <div class="buble-container">
+     <div class="buble-div">10%<span class="off">Off</span></div>
+      <hr class="hr"></br>
+     <div style="position: inherit; top: 190px;left: 8rem;">Join our newsletter</div>
+     <p style="font-size: 20px;margin-top: 25px;text-align: center;color:rgb(159, 159, 159);">
+      We’ll send you a nice letter once per week. No spam.</p>
+      <div class="input-text">
+        <input type="text" class="text-holder" placeholder="Your e-mail">
+        <a class="subscribe">Subscribe</a>
+      </div>
+  </div>
+</section>
+
+<section class="contact">
+  
+  <div class="contact-icon">
+    <img src="assets/contact/detailingshop-home-icon13.svg" class="contact-img-icon"/>
+    <div class="h4-contact"><h4>Do you need help? Contact our consultant</h4></div>
+  </div>
+
+  <div class="person-contact">
+    <img src="assets/contact/detailingshop-about-pic3-419x500.webp"/>
+  </div>
+
+  <div class="contact-details">
+    <div>We’ll send you a nice letter once per week</div></br>
+    <a class="number">+61 (0) 3 8376 6284</a></br>
+    <a class="subscribe-contact">Subscribe</a>
+  </div>
+
+</section>
+
+<section class="support">
+
+  <div class="support-content">
+   
+    <img src="assets/supports/detailingshop-home-icon9.svg"/>
+    <div class="support-text">
+     <h5>Free delivery</h5>
+     <div>Id vitae sapien molestie sed.</div>
+    </div>
+
+    <img src="assets/supports/detailingshop-home-icon10.svg" 
+     style="position: relative; left: 6px;"/>
+    <div class="support-text">
+     <h5 style="position: relative; left: -3rem;">High quality products</h5>
+     <div style="position: relative; left: -3rem;">Id vitae sapien molestie sed.</div>
+    </div>
+
+    <img src="assets/supports/detailingshop-home-icon11.svg"/>
+    <div class="support-text">
+     <h5>Special Offers</h5>
+     <div>Id vitae sapien molestie sed.</div>
+    </div>
+
+    <img src="assets/supports/detailingshop-home-icon12.svg"/>
+    <div class="support-text">
+     <h5>Support 24/7</h5>
+     <div>Id vitae sapien molestie sed.</div>
+    </div>
+  
+  </div>
+  
+</section>
+</br>
+
+<hr class="horizontal">
+
+<section class="side-icons">
+
+  <div class="side-web">
+   <div class="side-web1">
+    <span class="num">700+</span></br>
+    <span class="web" style="font-size: small;font-family: 'Montserrat', sans-serif;
+    position: relative; top:-7px">websites</span></div>
+    <div class="side-shopping-div">
+      <img src="assets/side-img/buy.svg" style="width:40%;
+      margin-left: 35%; margin-top: 5px;"/>
+      <span style="font-size: small; margin-left:18%;; 
+      white-space: nowrap;position: relative; top: -10px;">Buy now</span>
+    </div>
+   
+  </div>
+
+
+</section>
+
+<footer class="footer-section">
+  
+  <div class="footer-div-1">
+    <img src="assets/footer/detailingshop-footer-logo.svg"/></br></br>
+    <span class="span-footer">+61 (0) 3 8376 6284</span>
+    <div class="footer-paragraph">Venenatis sed pellentesque venenatis nunc quis nunc. 
+      Duis mauris velit dapibus in. Eget pharetra sollicitudin.</div>
+    
+    <div class="icons">
+      <a href=#><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="twitter-icon" aria-label="X (Twitter)" style="padding: 12px;padding-left: 4px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" 
+        width="19" style="margin-top: -4px;" fill="white">
+          <path d="M777.6 0H1000L618.2 521.6L1059.3 1227H730.1L460.7 802.1L150.6 1227H0L408.3 681.3L0 0H339.9L585.1 391.1L777.6 0ZM721.2 1101.1H816.5L281.7 121.9H180.3L721.2 1101.1Z"/>
+        </svg>
+      </a>
+     <a href=#><i class="fab fa-instagram"></i></a>
+      <a href=#><i class="fab fa-youtube"></i></a>
+    </div>
+
+      
+  </div>
+
+  <div class="middle-footer">
+    
+    <div>Main</div>
+    
+    <div class="footer-list">
+      
+      <ul>
+        <li><a>Products</a></li>
+        <li><a>About</a></li>
+        <li><a>Support</a></li>
+        <li><a>Media</a></li>
+        <li><a>Contact us</a></li>
+      </ul>
+    
+    </div>
+
+    <div class="end-footer">
+    
+      <div>Custom Service</div>
+      
+      <div class="footer-list">
+        
+        <ul>
+          <li><a>Shipping & Delivery</a></li>
+          <li><a>Return Policy</a></li>
+          <li><a>Privacy Policy</a></li>
+          <li><a>About Payment</a></li>
+          <li><a>Terms of Service</a></li>
+        </ul>
+      
+      </div>
+  
+  </div>
+
+
+
+
+</footer>
+
+</br>
+
+<hr class="horizontal-footer"></br>
+
+<div class="wordpress-footer">
+  
+  <div class="wordpress">© 2025 Betheme by 
+    <a style="color: #3A3A3A;" class="anchor-footer">Muffin group</a> | All Rights Reserved | Powered by
+    <a style="color: #3A3A3A;" class="anchor-footer">WordPress</a>
+ </div>
+
+</div>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function toggleSearch() {
+    const form = document.querySelector('.search-form');
+    form.classList.toggle('active');
+  }
+
+  function removeSearchBar() {
+    const form = document.querySelector('.search-form');
+    form.classList.remove('active');
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    const section = document.querySelector('.more-services');
+    const section2 = document.querySelector('.support');
+    
+    if (section) {
+      observer.observe(section);
+    }
+
+    if (section2) {
+      observer.observe(section2);
+    }
+  });
+</script>
+
+<script>
+  const slider = document.querySelector('.products-card');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5; // Adjust scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+  });
+</script>
+
+<script>
+  // Calculate the end of this week (Sunday at 23:59:59)
+  const now = new Date();
+  const endOfWeek = new Date();
+  endOfWeek.setDate(now.getDate() + (7 - now.getDay()));
+  endOfWeek.setHours(23, 59, 59, 999);
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = endOfWeek - now;
+
+    if (diff <= 0) {
+      document.getElementById("days").textContent = "00";
+      document.getElementById("hours").textContent = "00";
+      document.getElementById("minutes").textContent = "00";
+      document.getElementById("seconds").textContent = "00";
+      clearInterval(timer); // stop counting when expired
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").textContent = String(days).padStart(2, '0');
+    document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+  }
+
+  // Update every second
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown(); // initial call
+</script>
+
+
+
+
+</body>
+</html>
