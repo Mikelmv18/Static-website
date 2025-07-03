@@ -1,0 +1,114 @@
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* Only for larger screens */
+    position: relative;
+    left: -5rem;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .services div img {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    left: 20px;
+    padding: 0; /* -20px is invalid */
+  }
+  
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .services div .imgs {
+    display: inline-block;
+    border-style: groove;
+    border-radius: 10px;
+    height: 60%;
+    padding-top: -60px;
+    padding-left: -50px;
+  }
+  
+  .services div img {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    left: 20px;
+    padding: -20px;
+  }
+  
+  .services .services-content {
+    color: white;
+    display: inline-block;
+  }
+  
+  .services-content {
+    position: relative;
+    top: 15px;
+  }
+  
+  
+  .more-services {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: -16rem;
+    position: relative;
+    top: 80px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 1.5s ease, opacity 1.5s ease;
+  }
+  
+  .more-services.animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .more-services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+  }
+
+  
+  .more-services div span {
+    color: #333;
+  }
+  
+  .more-services img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    padding: 10px;
+  }
+
+  .more-services div:hover {
+    border-color: rgba(0, 0, 0, 0.108);
+    cursor: pointer;
+  }
+
+
+  .more-services div:hover img {
+    background-color: #c8ec66;
+    transition: 0.8s;
+    filter: brightness(1.1);
+  }
+
+  
