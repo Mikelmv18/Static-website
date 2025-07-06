@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: nowrap; /* Only for larger screens */
+    flex-wrap: nowrap;
     position: relative;
     left: -5rem;
     opacity: 0;
@@ -16,7 +16,7 @@
     height: 200px;
     position: relative;
     left: 20px;
-    padding: 0; /* -20px is invalid */
+    padding: 0; 
   }
   
   
@@ -54,7 +54,6 @@
     top: 15px;
   }
   
-  
   .more-services {
     display: flex;
     justify-content: center;
@@ -86,7 +85,7 @@
   }
 
   
-  .more-services div span {
+   .more-services div span {
     color: #333;
   }
   
@@ -99,6 +98,7 @@
     padding: 10px;
   }
 
+  
   .more-services div:hover {
     border-color: rgba(0, 0, 0, 0.108);
     cursor: pointer;
