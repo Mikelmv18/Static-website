@@ -464,16 +464,16 @@
   gap: 10px;
   position: relative;
   top: -43rem;
-  left: 17rem;
+  left: 8rem;
   margin-left: 60px;
 }
 
 .support-box img {
-  width: 60px;
+  width: 90px;
   border-radius: 10px;
   border-style: groove;
   border-color: rgb(0, 0, 0);
-  padding: 10px;
+  padding: 20px;
 }
 
 
