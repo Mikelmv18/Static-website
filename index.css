@@ -1,12 +1,13 @@
 .products {
   width: 100%;
   margin-left: -20rem;
+ 
 }
  
  .products-title {
     position: relative;
     top: 13rem;
-    margin-left: 20rem;
+    left: 7%;
     text-align: center;
     letter-spacing: -2px;
     font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -107,6 +108,10 @@
   
   .product-btn a:hover {
     color: white;
+  }
+   
+  .search-form-1 {
+    display: none;
   }
   
   .background-repeat {
@@ -431,9 +436,11 @@
 .support {
   display: flex;
   opacity: 0;
-  transform: translateX(-50px);
-  transition: all 0.5s ease;
-  margin-top: 2rem;
+  transform: translateX(-250px);
+  transition: all 1.5s ease;
+  margin-top: -5rem;
+  position: relative;
+  top: -2rem;
   padding: 0 1rem;
 }
 

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="services.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 
 
@@ -28,8 +29,11 @@
         </div>
         <!-- Burger icon next to the logo (visible only on mobile) -->
         <div class="burger-icon" onclick="toggleBurgerMenu()">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="burg-icon"></i>
         </div>
+       
+     
+        
       </div>
     
       <!-- Desktop Navbar -->
@@ -68,14 +72,20 @@
           <form class="search-form">
             <img src="https://static.vecteezy.com/system/resources/previews/014/767/647/non_2x/magnifying-glass-or-search-icon-on-white-background-illustration-eps-10-vector.jpg"
               class="loop-img" />
+           
             <input type="text" class="search-input" placeholder="Enter your search" name="search">
             <span class="remove-search" style="color: rgba(48, 48, 48, 0.514);" onclick="removeSearchBar()">X</span>
             <button type="button" class="search-btn" onclick="toggleSearch()">
               <i class="fa fa-search"></i>
             </button>
+          
           </form>
+
+  
       
           <i class="fa fa-shopping-cart"></i>
+          <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch2()" id="search-glass"></i>
+          </i>
           <i class="fas fa-user-alt user-icon" data-bs-toggle="modal" data-bs-target="#userModal"></i>
       
           <!-- Modal -->
@@ -95,12 +105,14 @@
                   </ul>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">LogOut</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
+                  style="background-color: rgb(230, 34, 34); border:none">Log Out</button>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
     
        
@@ -124,7 +136,7 @@
         <div class="nested-second">
           <div class="inline-div">
             <img src="assets/detailingshop-home-pic1.svg"/>
-            <h3 style="color: white;">Free delivery on this week!</h3>
+            <h3 style="color: white;" class="h3-img">Free delivery on this week!</h3>
           </div>
           <div class="time">
             <div>
@@ -230,7 +242,8 @@
   <div class="products-title">
     <h2 style="font-size: 50px;">Recommended</h2>
     <br />
-    <span style="color: #C5C1BD; position: relative; top: -30px; font-size: 50px;">Products</span>
+    <span style="color: #C5C1BD; position: relative; top: -30px; font-size: 50px;">
+     Products</span>
   </div>
 
   <!-- Desktop Grid (Hidden on mobile) -->
@@ -347,20 +360,24 @@
       <img src="assets/new-imgs/detailingshop-blog-post1-1200x645.webp" />
       <div class="content">
         <div class="january-content">January 8, 2025</div>
+       <div class="general-content">
         <h3>What product for the perfect lamps?</h3>
         <p>Adding the perfect finishing touch to your car's lighting often involves 
           these key details: Pick high-quality bulbs, choose a color temperature, 
           and protective covers.</p>
+        </div>
       </div>
     </div>
   
     <div class="blog-item">
       <img src="assets/new-imgs/detailingshop-blog-post2-1200x645.webp" />
       <div class="content">
+        <div class="general-content">
         <div class="january-content">January 8, 2025</div>
         <h3>How to take care of car paint all year round?</h3>
         <p>Maintaining your car's paint year-round involves a few key steps: 
           Regular Washing, Proper Drying, Waxing, Quick Detailing</p>
+        </div>
       </div>
     </div>
   </div>
@@ -524,6 +541,7 @@
 
 
 
+  <div class="ios-scroll-fix"></div>
 </footer>
 
 </br>
@@ -531,18 +549,20 @@
 <hr class="horizontal-footer"></br>
 
 <div class="wordpress-footer">
-  
-  <div class="wordpress">© 2025 Betheme by 
-    Muffin group&nbsp | All Rights Reserved | Powered by&nbsp
-    WordPress
- </div>
+  <div class="wordpress">
+    © 2025 Betheme by Muffin group&nbsp; | All Rights Reserved | Powered by&nbsp; WordPress
+  </div>
+
+  <!-- Correctly placed scroll fix here -->
+  <div class="ios-scroll-fix"></div>
+</div>
+
+
 
 </div>
 
 
-</div>
-
-
+<!-- Bootstrap JS bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
@@ -555,7 +575,35 @@
     const form = document.querySelector('.search-form');
     form.classList.remove('active');
   }
+
 </script>
+
+<script>
+  function toggleSearch2() {
+    console.log("Toggling search bar");
+    const searchForm = document.querySelector('.search-form-1');
+    if (searchForm) {
+      searchForm.classList.toggle('active');
+    }
+  }
+
+  function removeSearchBar2() {
+    const searchForm = document.querySelector('.search-form-1');
+    if (searchForm) {
+      searchForm.classList.remove('active');
+    }
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modalEl = document.getElementById('userModal');
+    modalEl.addEventListener('hidden.bs.modal', function () {
+      console.log('Modal fully hidden');
+    });
+  });
+</script>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -592,8 +640,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.3,
-      rootMargin: "30px 30px 60% 0px" // Animate `.support` when it’s lower in viewport
+      threshold: 0.1,
+      rootMargin: "0px" // Animate `.support` when it’s lower in viewport
     }
   );
   
@@ -612,8 +660,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    threshold: 0.01,
-    rootMargin: "100px 0px -100px 0px"
+    threshold: 0.001,
+    rootMargin: "0px"
   });
 
   const target = document.querySelector(".services");
@@ -626,6 +674,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleBurgerMenu() {
     const menu = document.querySelector('.burger-menu');
     menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+    
   }
 </script>
 
